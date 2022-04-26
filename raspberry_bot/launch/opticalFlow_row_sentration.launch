@@ -1,0 +1,10 @@
+<launch>
+
+<node pkg="raspberry_bot" type="controller_opticalFlow.py" name="line_follower_opticalFlow_node" output="screen">
+</node>
+
+<node pkg="optic_flow_example" type="optic_flow_lucas_kanade.py" name="optic_flow_calculator" output="screen">
+<param name="topic" value="/raspberry_bot/opticalFlow/left_crop" />
+</node>
+
+</launch>

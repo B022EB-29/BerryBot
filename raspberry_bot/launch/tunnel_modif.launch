@@ -1,0 +1,11 @@
+<launch>
+  <!-- We resume the logic in empty_world.launch, changing only the name of the world to be launched -->
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="world_name" value="$(find raspberry_bot)/worlds/tunnel_original_tentSinked.world"/>
+    <!-- more default parameters can be changed here -->
+    <!-- Launching Husky in the raspberry greenhouse tunnel field world -->
+	
+	<include file="$(find husky_gazebo)/launch/spawn_husky.launch"></include>
+  
+</include>
+</launch>

@@ -1,0 +1,4 @@
+<launch>
+<node pkg="tf" type="static_transform_publisher" name="realsense_broadcaster" 
+args="0 0 0 0 0 0 /top_plate_front_link /camera_link 10"/>
+</launch>
